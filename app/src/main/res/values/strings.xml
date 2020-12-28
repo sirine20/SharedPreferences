@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">SharedPreferences</string>
+    <string name="login">login</string>
+    <string name="remember_my_login_information">remember_my_login_information</string>
+    <string name="entre_name">Entre Name</string>
+    <string name="enter_password">enter_password</string>
+    <string name="checkbox">com.dsi31.SharedPreferences.checkbox</string>
+    <string name="name">com.dsi31.SharedPreferences.name</string>
+    <string name="password">com.dsi31.SharedPreferences.password</string>
 </resources>
