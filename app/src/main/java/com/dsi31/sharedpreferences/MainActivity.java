@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void checkSharePerences() {
-        String checkbox = mPreferences.getString(getString(R.string.checkbox), "False");
+        String checkbox = mPreferences.getString(getString(R.string.checkbox),"False");
         String name = mPreferences.getString(getString(R.string.name), "");
         String password = mPreferences.getString(getString(R.string.password), "");
         mName.setText(name);
