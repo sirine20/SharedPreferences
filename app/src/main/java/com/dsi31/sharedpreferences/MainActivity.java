@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         mPassword = (EditText) findViewById(R.id.etPassword);
         btnLogin = (Button) findViewById(R.id.btnLogin);
         mCheckBox = (CheckBox) findViewById(R.id.checkBox);
-        //
+        //mPreference=getSharedPreferences("com.dsi31.sharedpreferences", Context.MODE_PRIVATE)
         mPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         mEditor = mPreferences.edit();
         checkSharePerences();
@@ -64,11 +64,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void checkSharePerences() {
+
         String checkbox = mPreferences.getString(getString(R.string.checkbox),"False");
         String name = mPreferences.getString(getString(R.string.name), "");
         String password = mPreferences.getString(getString(R.string.password), "");
+
         mName.setText(name);
         mPassword.setText(password);
+
         if (checkbox.equals("true")){
             mCheckBox.setChecked(true);
         }else {
